@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 docker-compose \
--f ./services/mine-support-web/docker-compose.yaml \
--f ./services/mine-support-web/docker-compose.message.yaml \
--f ./services/mine-support-claim-service/docker-compose.yaml \
+-f ../mine-support-web/docker-compose.yaml \
+-f ../mine-support-web/docker-compose.message.yaml \
+-f ../mine-support-claim-service/docker-compose.yaml \
 up --force-recreate $@
